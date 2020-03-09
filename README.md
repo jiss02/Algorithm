@@ -13,6 +13,7 @@
 - [특정 문자로 칸 채우기](#특정-문자로-칸-채우기)
 - [비트연산자](#비트연산자)
 - [heapq](#heapq)
+- [collections](#collections)
 
 ---
 
@@ -53,7 +54,7 @@ bin(), hex(), oct()
 
 ---
 
-#### heapq
+#### Heapq
 
 `우선순위큐`를 위한 자료구조인 `힙`을 간편하게 사용하도록 도와주는 라이브러리이다.
 
@@ -71,3 +72,17 @@ heapq.heappush(arrname, num)
 ```
 
 > max-heap은 지원하지않는다.
+
+---
+
+#### Collections
+
+편리한 기능이 추가된 다양한 딕셔너리와 queue를 사용가능하게 해주는 라이브러리이다.
+
+**종류**
+
+- defaultdict : 딕셔너리 생성시, value의 디폴트 값을 설정해줄 수 있다.
+- Oredereddict: value에 대해 **내림차순**으로 정렬해준다.
+- Counter: 여러 중복 값이 존재하는 list를 넣어주면 각 요소가 몇개있는지 세어서 딕셔너리로 만들어준다. (오름차순으로 정렬까지 해준다!)
+- deque: list를 queue처럼 사용가능하게 해준다. rotate(위치돌리기)와 leftpush, leftpop까지 제공한다.
+
